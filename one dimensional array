@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+	int i, a[5];
+	for(i=0;i<5;i++)
+	{
+		printf("Enter the value  a[%d] = ",i);
+		scanf("%d", &a[i]);
+	}
+	for(i=0;i<5;i++)
+	{
+		printf("\n%d",a[i]);
+	}
+	return 0;
+}
+
+
+
+Output:
+Enter the value  a[0] = 5
+Enter the value  a[1] = 4
+Enter the value  a[2] = 3
+Enter the value  a[3] = 2
+Enter the value  a[4] = 1
+
+5
+4
+3
+2
+1
