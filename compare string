@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char name1[50]="abhi",name2[50]="abhi";
+    int result;
+    result=strcmp(name1,name2);
+    printf("%d",result);
+    return 0;
+}
