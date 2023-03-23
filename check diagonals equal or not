@@ -1,0 +1,62 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i, j, a[3][3],x,y;
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Enter the elements of A = ");
+			scanf("%d", &a[i][j]);
+		}
+		printf("\n");
+	}
+	
+	printf("the original matrix is\n");
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf(" %d ",a[i][j]);
+		}
+		printf("\n");
+    }
+    printf("\n");
+    for(i=0;i<3;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		if(i==j)
+    		{
+    			printf("%d ",a[i][j]);
+			}
+		}
+		
+	}
+	printf("\n");
+	for(i=0;i<3;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		if(i==j)
+    		{
+    			printf("%d\n",a[i][3-i-1]);
+			}
+		}
+		
+	}
+	x = a[i][j];
+	y = a[i][3-i-1];
+	
+	if(x == y)
+	{
+		printf("diagonal elements are equal");
+	}
+	else
+	{
+		printf("the diagonal elements are not equal");
+	}
+}
