@@ -1,0 +1,12 @@
+void main()
+{
+int const * p=5;
+printf("%d",++(*p));
+}
+
+
+errors:
+1. no headerfiles
+2. no looping statement for the increment of p
+3. printf is not well defined
+4. invalid conversion from int to const
