@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+	int space,i,j,n=5,fact=1;
+	
+	for(i=0;i<n;i++)
+	{
+		for(space=1;space<=n;space++)
+		printf(" ");
+		for(j=0;j<=i;j++)
+		{
+			if(j==0 || i==j)
+			fact=1;
+			else
+			fact=fact*(i-j+1)/j;
+			printf("%d ",fact);
+		}
+		printf("\n");
+	}
+}
