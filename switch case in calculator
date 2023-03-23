@@ -1,0 +1,35 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	float a,b;
+	int num;
+	printf("enter 2 integers are ");
+	scanf("%f %f",&a,&b);
+	printf("1.addition\n2.subtraction\n3.multiplication\n4.division\n");
+	printf("enter the number ");
+	scanf("%d",&num);
+	
+	switch(num)
+	{
+		case 1: 
+		   printf("the sum of %.f and %.f are %.f",a,b,a+b);
+		   break;
+		
+		case 2: 
+		   printf("the subtraction of %.f and %.f are %.f",a,b,a-b);
+	   	   break;
+		
+		case 3: 
+		   printf("the product of %.f and %.f are %.f",a,b,a*b);
+		   break;
+		
+		case 4: 
+		   printf("the division of %.f and %.f are %.f",a,b,a/b);
+		   break;
+		
+		default:
+		   printf("error");
+	}
+	return 0;
