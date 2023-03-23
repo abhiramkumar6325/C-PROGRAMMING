@@ -1,0 +1,47 @@
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int i, j, a[3][3],so,sm;
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf("Enter the elements of A = ");
+			scanf("%d", &a[i][j]);
+		}
+		printf("\n");
+	}
+	
+	printf("the original matrix is\n");
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			printf(" %d ",a[i][j]);
+		}
+		printf("\n");
+    }
+    printf("\n");
+    for(i=0;i<3;i++)
+    {
+    	for(j=0;j<3;j++)
+    	{
+    		if(i==j)
+    		{
+    			printf("%d ",a[i][j]);
+			}
+		}
+		
+	}
+	printf("\n");
+	for(i=0;i<3;i++)
+    {
+    	so = so + a[i][i];
+    	sm = sm + a[i][3-i-1];
+	}
+	printf("the sum of main diagonal elements is %d\n",so);
+	printf("the sum of off diagonal elements is %d\n",sm);
+}
