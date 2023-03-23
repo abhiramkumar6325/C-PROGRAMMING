@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+int main()
+{
+    int a[]={6,12,18,24};
+    int x=0;
+    x=a[1]+(a[1]=2);
+    printf("%d",x);
+    return 0;
+}
