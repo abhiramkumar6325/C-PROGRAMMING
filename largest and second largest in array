@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+	int a[5],i,j;
+	int maxbig = a[0];
+	int max2 = a[1];
+	for(i=0;i<5;i++)
+	{
+	    printf("enter the element");
+	    scanf("%d",&a[i]);
+    }
+
+	for(i=0;i<5;i++)
+	{
+		if(a[i]>maxbig)
+		{
+			maxbig = a[i];
+		}
+	}
+	printf("the maximum element is %d\n",maxbig);
+	
+	for(j=0;j<5;j++)
+	{
+		if(maxbig>a[j] && a[j]>max2)
+		{
+			max2 = a[j];
+		}
+	}
+	printf("the second maximum element is %d",max2);
+}
