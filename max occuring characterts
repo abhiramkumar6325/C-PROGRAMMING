@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char s[100];
+	int freq[256] = {0};
+	int i, max_freq = 0;
+	char max_char;
+	printf("Enter a string = ");
+	fgets(s, 100, stdin);
+	
+	int len = strlen(s);
+	for(i = 0 ; i < len ; i++)
+	{
+		freq[s[i]]++;
+	}
+	for(i = 0 ; i < len ; i++)
+	{
+		if(freq[s[i]] > max_freq)
+		{
+			max_freq = freq[s[i]];
+			max_char = s[i];
+		}
+	}
+	printf("Maximum occurring character is '%c' with frequency %d.\n", max_char, max_freq);
+	return 0;
+}
