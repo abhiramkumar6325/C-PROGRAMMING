@@ -1,0 +1,17 @@
+main() {
+
+    int a = 10;      
+
+    if ((fork ( ) == 0))      
+
+    a++;      
+
+    printf ("%dn", a ); 
+
+}
+
+output:
+fork was not declared
+no header file
+printf is not declared
+int main() is not in proper
